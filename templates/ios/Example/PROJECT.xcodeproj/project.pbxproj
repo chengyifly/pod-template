@@ -29,7 +29,7 @@
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6003F589195388D20070C39A;
-			remoteInfo = "PROJECT";
+			remoteInfo = PROJECT;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -80,6 +80,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DE2E07A1D587FFC008A8973 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		5DE2E0921D587FFC008A8973 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5DE2E0931D587FFC008A8973 /* Macro&Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Macro&Constant";
+			sourceTree = "<group>";
+		};
+		5DE2E0971D587FFC008A8973 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5DE2E0981D587FFC008A8973 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2E0991D587FFC008A8973 /* constant */,
+				5DE2E09A1D587FFC008A8973 /* mock */,
+				5DE2E09B1D587FFC008A8973 /* sql */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5DE2E0991D587FFC008A8973 /* constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = constant;
+			sourceTree = "<group>";
+		};
+		5DE2E09A1D587FFC008A8973 /* mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mock;
+			sourceTree = "<group>";
+		};
+		5DE2E09B1D587FFC008A8973 /* sql */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = sql;
+			sourceTree = "<group>";
+		};
+		5DE2E09C1D587FFC008A8973 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5DE2E0A11D587FFC008A8973 /* Third-Party */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Third-Party";
+			sourceTree = "<group>";
+		};
+		5DE2E0A21D587FFC008A8973 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2E0A31D587FFC008A8973 /* CustomControl */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		5DE2E0A31D587FFC008A8973 /* CustomControl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomControl;
+			sourceTree = "<group>";
+		};
+		5DE2E0A41D587FFC008A8973 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -119,11 +214,20 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* CPDViewController.h */,
 				6003F5A6195388D20070C39A /* CPDViewController.m */,
+				5DE2E07A1D587FFC008A8973 /* Category */,
+				5DE2E0921D587FFC008A8973 /* Controller */,
+				5DE2E0931D587FFC008A8973 /* Macro&Constant */,
+				5DE2E0971D587FFC008A8973 /* Model */,
+				5DE2E0981D587FFC008A8973 /* Resource */,
+				5DE2E09C1D587FFC008A8973 /* Service */,
+				5DE2E0A11D587FFC008A8973 /* Third-Party */,
+				5DE2E0A21D587FFC008A8973 /* Util */,
+				5DE2E0A41D587FFC008A8973 /* View */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for PROJECT";
-			path = "PROJECT";
+			path = PROJECT;
 			sourceTree = "<group>";
 		};
 		6003F594195388D20070C39A /* Supporting Files */ = {
@@ -178,8 +282,8 @@
 			);
 			dependencies = (
 			);
-			name = "PROJECT_Example";
-			productName = "PROJECT";
+			name = PROJECT_Example;
+			productName = PROJECT;
 			productReference = 6003F58A195388D20070C39A /* PROJECT_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -196,8 +300,8 @@
 			dependencies = (
 				6003F5B4195388D20070C39A /* PBXTargetDependency */,
 			);
-			name = "PROJECT_Tests";
-			productName = "PROJECTTests";
+			name = PROJECT_Tests;
+			productName = PROJECTTests;
 			productReference = 6003F5AE195388D20070C39A /* PROJECT_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -209,7 +313,7 @@
 			attributes = {
 				CLASSPREFIX = CPD;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "PROJECT_OWNER";
+				ORGANIZATIONNAME = PROJECT_OWNER;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
