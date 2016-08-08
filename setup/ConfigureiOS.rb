@@ -12,7 +12,7 @@ module Pod
     end
 
     def perform
-
+=begin
       keep_demo = configurator.ask_with_answers("Would you like to include a demo application with your library", ["Yes", "No"]).to_sym
 
       framework = configurator.ask_with_answers("Which testing frameworks will you use", ["Specta", "Kiwi", "None"]).to_sym
@@ -51,6 +51,7 @@ module Pod
               configurator.add_line_to_pch "@import Expecta_Snapshots;"
           end
       end
+=end
 
       prefix = nil
 
@@ -68,13 +69,13 @@ module Pod
         :configurator => @configurator,
         :xcodeproj_path => "templates/ios/Example/PROJECT.xcodeproj",
         :platform => :ios,
-        :remove_demo_project => (keep_demo == :no),
+        :remove_demo_project => :yes,
         :prefix => prefix
       }).run
       
       # There has to be a single file in the Classes dir
       # or a framework won't be created, which is now default
-      `touch Pod/Classes/ReplaceMe.m`
+      ##`touch Pod/Classes/ReplaceMe.m`
 
       `mv ./templates/ios/* ./`
     end
