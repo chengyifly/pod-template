@@ -28,7 +28,7 @@ module Pod
       replace_internal_project_settings
 
       @project = Xcodeproj::Project.open(@xcodeproj_path)
-      add_podspec_metadata
+#      add_podspec_metadata
       remove_demo_project if @remove_demo_target
       @project.save
 
@@ -36,14 +36,14 @@ module Pod
       rename_project_folder
     end
 
-    def add_podspec_metadata
 =begin
+    def add_podspec_metadata
       project_metadata_item = @project.root_object.main_group.children.select { |group| group.name == "Podspec Metadata" }.first
       project_metadata_item.new_file "../" + @configurator.pod_name  + ".podspec"
       project_metadata_item.new_file "../README.md"
       project_metadata_item.new_file "../LICENSE"
- =end
     end
+ =end
 
     def remove_demo_project
       app_project = @project.targets.select { |target| target.product_type == "com.apple.product-type.application" }.first
