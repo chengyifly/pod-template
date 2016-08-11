@@ -37,7 +37,6 @@ module Pod
       puts "\n------------------------------"
       puts ""
       puts "开始创建之前请先回答以下问题："
-      puts ""
 
       has_run_before = `defaults read org.cocoapods.pod-template HasRunbefore`.chomp == "1"
 
