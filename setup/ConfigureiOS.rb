@@ -17,7 +17,7 @@ module Pod
 
         framework = :none
       #configurator.ask_with_answers("Which testing frameworks will you use", ["Specta", "Kiwi", "None"]).to_sym
-      configurator.set_test_framework("xctest", "m")
+      #configurator.set_test_framework("xctest", "m")
 =begin
       case framework
         when :specta
@@ -38,6 +38,8 @@ module Pod
           configurator.set_test_framework("xctest", "m")
       end
 =end
+
+=begin
       snapshots = configurator.ask_with_answers("Would you like to do view based testing", ["Yes", "No"]).to_sym
       case snapshots
         when :yes
@@ -54,6 +56,7 @@ module Pod
               configurator.add_line_to_pch "@import Expecta_Snapshots;"
           end
       end
+=end
 
       prefix = nil
 
